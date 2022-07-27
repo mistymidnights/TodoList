@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-container {
+    background-color: #a786df;
+    padding: 20px;
+    width: 60%;
+    border-radius: 10px;
+    margin-top: 85px;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    border: none;
+    height: 46px;
+    width: 428px;
+    border-radius: 7px;
+    background-color: white;
+    color: black;
+}
+
+button{
+    border: none;
+    border-radius: 7px;
+    background-color: #ff8ba7;
+    color: white;
+    font-size: 20px;
+    width: 60px;
+}
+
+button:hover{
+    background-color: #33272a;
+}
+
+::placeholder {
+    color: rgb(78, 78, 78);
+    text-align: center;
+    font-size: 16px;
+}
+
+.body-container {
+    background-color: #faeee7;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+.task-container{
+    background-color: rgb(221, 221, 221);
+    margin-top: 20px;
+    height: 60px;
+    width: 70%;
+
+    border-radius: 10px;
+}
+
+.task-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-container{
+    color: rgb(154, 154, 154)
+}
+
+.tasks-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 70%;
+    border-radius: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.tasks-container ul{
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tasks-container ul li {
+    font-weight: bold;
+    height: 68px;
+    background-color: #ff8ba7;
+    color: white;
+    width: 80%;
+    margin: 10px 0px 30px 0px;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 0px 20px 0px 40px;
+}
+
+
+.body-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-delete{
+    height: 40px;
+    background-color: white;
+    color: #ff8ba7;
+    width: 76px;
+}
+
+.empty p{
+    letter-spacing: 5px;
+}
+
+header{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    background-color: #faeee7;
+    color: white;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.title h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
