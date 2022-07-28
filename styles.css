@@ -120,6 +120,7 @@ button:hover{
 
 .empty p{
     letter-spacing: 5px;
+    margin-bottom: 20px;
 }
 
 header{
@@ -137,4 +138,9 @@ header{
 
 .title h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    -webkit-text-stroke: 0.2px #a786df;
+}
+
+.removeAll{
+    width: 140px;
 }

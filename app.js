@@ -2,6 +2,9 @@ const inputTask = document.querySelector('input');
 const botonTask = document.querySelector('button');
 const listTask = document.querySelector('ul');
 const emptyTask =document.querySelector('.empty');
+const body = document.querySelector('body');
+
+
 
 //crear tarea
 botonTask.addEventListener( 'click', (element) =>{
@@ -10,9 +13,9 @@ botonTask.addEventListener( 'click', (element) =>{
         li.classList.add('li-container');
         const p = document.createElement('p');
         p.textContent = textInput;
-        
+        //si el texto del input no está vacío
         if (textInput !== '') {
-                    li.appendChild(p);
+                li.appendChild(p);
         //añadir boton creado con arrow
         li.appendChild(addDeleteButton());
         listTask.appendChild(li);
@@ -38,11 +41,25 @@ const addDeleteButton = () => {
             listTask.removeChild(removeDiv);
             
             //cogemos todos los li
-            const removeDivs = document.querySelectorAll('li');
+            
             //si no hay ningún li ...
-            if (removeDivs.length === 0) {
+            if (removeLis.length === 0) {
                 emptyTask.style.display = 'block';
             }
         });
         return deleteButton;
 }
+
+const buttonDltAll = document.querySelector('#removeAll');
+
+//aqui no hace falta hacer una funcion
+    buttonDltAll.addEventListener('click', ()=>{
+        //se crea dentro si no no lo
+        const removeLis = document.querySelectorAll('.li-container');
+        console.log(removeLis)
+        removeLis.forEach((element) => {
+            element.remove();
+        });
+        emptyTask.style.display = 'block';
+    })
+    
